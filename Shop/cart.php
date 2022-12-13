@@ -3,15 +3,15 @@
 	</title>
 	<head>
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="cart.css">
 	</head>
-	<body>
+	<body onload="cart.createList()">
 		<div class="wrap">
 			<div class="page">
-				<?php require("navBar.php") ?>
-				<div class="productsWrap">
-					<div class="section" id="section">Products you may like</div>
-					<?php require("products.php")?>
-				</div>
+            <?php require("navBar.php") ?>
+                <div id="cartList" class="cartList">
+                    <script src="cart.js"></script>    
+                </div>
 				<div class="footerWrap">
 					<div class="footer">
 						Footer
